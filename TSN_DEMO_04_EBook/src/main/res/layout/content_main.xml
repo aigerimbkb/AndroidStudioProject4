@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="kz.talipovsn.ebook.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <!-- Просмотрщик html-страниц (и web) -->
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/adView"
+        android:layout_above="@+id/searchToolLayout"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/app_name" />
+
+    <RelativeLayout
+        android:id="@+id/searchToolLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/searchText"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:hint="@string/search_hint"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10sp"
+            android:textColor="@color/textColor" />
+
+        <ImageButton
+            android:id="@+id/searchBackButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/searchText"
+            android:layout_toRightOf="@+id/searchText"
+            app:srcCompat="@drawable/ic_action_prev" />
+
+        <ImageButton
+            android:id="@+id/searchForwardButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/searchBackButton"
+            android:layout_toRightOf="@id/searchBackButton"
+            app:srcCompat="@drawable/ic_action_next" />
+
+        <TextView
+            android:id="@+id/searchCountText"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/searchForwardButton"
+            android:layout_toLeftOf="@+id/searchCloseButton"
+            android:layout_toRightOf="@id/searchForwardButton"
+            android:layout_toStartOf="@+id/searchCloseButton"
+            android:paddingTop="10sp"
+            android:textColor="@color/textColor" />
+
+        <ImageButton
+            android:id="@+id/searchCloseButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/ic_action_close" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:clickable="true"
+        android:elevation="12dp"
+        ads:srcCompat="@drawable/ic_action_search"
+        app:fabSize="mini" />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="lec00">Содержание</string>
+    <string name="lec01">Что такое Валюта?</string>
+    <string name="lec11">Виды Валют</string>
+    <string name="lec15">Курс Валют</string>
+    <string name="prog">Валюты Мира</string>
+
+</resources>

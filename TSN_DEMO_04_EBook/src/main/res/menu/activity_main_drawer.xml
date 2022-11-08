@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/lec00"
+            android:icon="@drawable/ic_view_list_black_24dp"
+            android:title="@string/lec00" />
+        <item
+            android:id="@+id/lec01"
+            android:icon="@drawable/ic_baseline_attach_money_24"
+            android:title="@string/lec01" />
+        <item
+            android:id="@+id/lec11"
+            android:icon="@drawable/ic_baseline_attach_money_24"
+            android:title="@string/lec11" />
+        <item
+            android:id="@+id/lec15"
+            android:icon="@drawable/ic_baseline_attach_money_24"
+            android:title="@string/lec15" />
+    </group>
+
+    <item android:title="@string/bonus">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/prog"
+                    android:icon="@drawable/ic_view_list_black_24dp"
+                    android:title="@string/prog" />
+                <item
+                    android:id="@+id/lit"
+                    android:icon="@drawable/ic_view_list_black_24dp"
+                    android:title="@string/lit" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/laws">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/laws_kz_l1"
+                    android:icon="@drawable/ic_error_outline_black_24dp"
+                    android:title="@string/laws_kz_l1" />
+                <item
+                    android:id="@+id/laws_ru_l1"
+                    android:icon="@drawable/ic_error_outline_black_24dp"
+                    android:title="@string/laws_ru_l1" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/additional">
+        <menu>
+            <item
+                android:id="@+id/nav_view1"
+                android:icon="@drawable/ic_import_contacts_black_24dp"
+                android:title="@string/prism_break" />
+            <item
+                android:id="@+id/nav_view2"
+                android:icon="@drawable/ic_import_contacts_black_24dp"
+                android:title="@string/securitylab" />
+            <item
+                android:id="@+id/nav_view3"
+                android:icon="@drawable/ic_import_contacts_black_24dp"
+                android:title="@string/spy_soft" />
+        </menu>
+    </item>
+
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_drafts_black_24dp"
+                android:title="@string/send_mail" />
+        </menu>
+    </item>
+
+</menu>
